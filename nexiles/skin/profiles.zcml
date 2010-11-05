@@ -1,0 +1,22 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="nexiles.skin">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="nexiles GmbH Plone skin"
+      directory="profiles/default"
+      description='Extension profile for the "nexiles GmbH Plone skin" Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:importStep
+      name="nexiles.skin.various"
+      title="nexiles GmbH Plone skin: miscellaneous import steps"
+      description="Various import steps that are not handled by GS import/export handlers."
+      handler="nexiles.skin.setuphandlers.setupVarious">
+    <depends name="skins"/>
+  </genericsetup:importStep>
+
+</configure>
