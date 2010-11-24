@@ -1,3 +1,4 @@
+from zope import interface
 from plone.theme.interfaces import IDefaultPloneLayer
 
 
@@ -7,3 +8,9 @@ class IThemeSpecific(IDefaultPloneLayer):
        "nexiles GmbH Plone skin" theme, this interface must be its layer
        (in skin/viewlets/configure.zcml).
     """
+
+class INexilesView(interface.Interface):
+    """ """
+
+    def getColumnsClass(view, column):
+        """ Returns the CSS class based on columns presence. """

@@ -15,6 +15,16 @@
       type="zope.publisher.interfaces.browser.IBrowserSkinType"
       name="nexiles GmbH Plone skin"
       />
+
+   <!-- Nexiles special view -->
+    <browser:page
+        for="*"
+        name="nexilesview"
+        class=".nexilesview.NexilesView"
+        permission="zope.Public"
+        allowed_interface=".interfaces.INexilesView"
+        />
+
   
   <!-- Viewlets registration -->
   <!-- EXAMPLE (UNCOMMENT TO MAKE AVAILABLE):
