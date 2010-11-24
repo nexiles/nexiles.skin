@@ -65,6 +65,9 @@
               <!-- TODO: Temporary, this one should be in the template that is inserted -->
               <div tal:replace="structure provider:plone.portaltop" />
             </div>
+            <div id="banderole">
+              <img src="banderole.png" />
+            </div>
         </div>
     <div id="portal-columns" class="row">
 

@@ -3,6 +3,7 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="nexiles.skin">
 
+
   <!-- 'nexiles GmbH Plone skin' Zope 3 browser layer
     Register views, viewlets and resources for this layer to make sure
     they only apply to the 'nexiles GmbH Plone skin' theme.
@@ -49,5 +50,10 @@
       directory="stylesheets"
       layer=".interfaces.IThemeSpecific"
       />
+
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:jbot
+      directory="jbot"
+      layer=".interfaces.IThemeSpecific" />
 
 </configure>
