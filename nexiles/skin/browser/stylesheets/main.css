@@ -9,63 +9,16 @@ grün: #76b41f
 /* @group basics */
 
 a:link, a:visited {
-	color:#676867;
+    color:#676867;
 }
 
 dl.portlet a:link {
-	color:#676867;	
+    color:#676867;  
 }
 
 #content a:link, dl.portlet a:link {
-	color:#676867;
+    color:#676867;
 }
-
-/* @end */
-
-/* @group HEADER */
-
-
-
-
-
-/* @group global nav */
-
-#portal-globalnav {
-	clear: left;
-	float: left;
-	right: -25%;
-	position:relative;
-	/* top:-5em; */
-	background: transparent;
-}
-
-	#portal-globalnav ul {
-		 background: transparent;
-
-	}
-
-	#portal-globalnav li {
-	    background: transparent;
-	}
-
-		#portal-globalnav li a {
-		    background: transparent;
-		    border: none;
-		}
-
-			#portal-globalnav .selected a,
-			#portal-globalnav a:hover {
-			    background: transparent;
-			    color: #76b41f;
-			}
-			#portal-globalnav .selected a:hover {
-				background: transparent;
-			    color: #76b41f;
-			}
-
-
-/* @end */
-
 
 #visual-portal-wrapper {
   margin-left: 50px;
@@ -76,38 +29,122 @@ dl.portlet a:link {
   -webkit-box-shadow: 0px 0px 3px 3px #676867;
 }
 
-/* die personaltools (drop-down) nach oben an den Seitenrand */
-#portal-personaltools {
-	top: -30px;
-	position: absolute;
-	background: white;
-	z-index: 3;
-}
-  #portal-personaltools dd {
-	background: white;
-	border: thin solid #676867;
-}
+/* @end */
 
-/* die suchbox nach links; weg von der banderole */
-#portal-searchbox {
-	left: -10em;
-	position: relative;
-	clear: none;
-}
+/* @group HEADER */
 
-a#portal-logo {
-	margin-top: 0;
+#portal-top {
+    z-index: 0;
 }
-#banderole {
-    float: right;
-
-}
-    #banderole img {
-        position: relative;
-        top: -7px;
-        right: -8px;
+    #portal-header {
         z-index: 1;
     }
+
+
+/* @group global nav */
+
+#portal-globalnav {
+    clear: left;
+    float: left;
+    right: -25%;
+    position:relative;
+    /* top:-5em; */
+    background: transparent;
+}
+
+    #portal-globalnav ul {
+         background: transparent;
+
+    }
+
+    #portal-globalnav li {
+        background: transparent;
+    }
+
+        #portal-globalnav li a {
+            background: transparent;
+            border: none;
+        }
+
+            #portal-globalnav .selected a,
+            #portal-globalnav a:hover {
+                background: transparent;
+                color: #76b41f;
+            }
+            #portal-globalnav .selected a:hover {
+                background: transparent;
+                color: #76b41f;
+            }
+
+/* @end */
+
+/* @group language selector */
+
+#portal-languageselector {
+    background:none repeat scroll 0 0 white;
+    z-index: 2;
+    padding:1em 2em;
+    position:relative;
+    top:0;
+    left: -12em;
+}
+
+/* @end */
+
+
+/* @group personal tools */
+
+#portal-personaltools-wrapper {
+	   top: -30px;
+       position: absolute;
+
+}
+	#portal-personaltools {
+	    background: white;
+	    z-index: 3;
+	
+	}
+	    #portal-personaltools dd {
+	        background: white;
+	        border: thin solid #676867;
+	        z-index: 3;
+	    }
+
+
+
+/* @end */
+
+
+/* @group search */
+/* die suchbox nach links; weg von der banderole */
+#portal-searchbox {
+    left: -12em;
+    position: relative;
+    clear: none;
+    
+}
+
+    #portal-searchbox input.searchButton {
+        display: none;
+    }
+/* @end */
+
+/* @group logo und banderole */
+
+a#portal-logo {
+    margin-top: 0;
+}
+#banderole {
+    position: relative;
+    float: right;
+    top: -7px;
+    right: -8px;
+    z-index: 1;
+
+}
+
+
+/* @end */
     
 /* @end */
 
