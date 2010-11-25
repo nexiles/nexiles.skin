@@ -61,6 +61,12 @@
       layer=".interfaces.IThemeSpecific"
       />
 
+  <browser:resourceDirectory
+      name="nexiles.skin.js"
+      directory="js"
+      layer=".interfaces.IThemeSpecific"
+      />
+
   <include package="z3c.jbot" file="meta.zcml" />
   <browser:jbot
       directory="jbot"
