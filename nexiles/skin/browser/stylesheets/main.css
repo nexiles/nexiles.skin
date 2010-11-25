@@ -186,11 +186,13 @@ dl.portlet ul.navTreeLevel0 > .navTreeItem {
     padding:0.25em 1em;
     /*border: none;*/
     color: #676867;
+    padding-right: 0;
+    padding-top: 0.25em;
 }
 
 dl.portlet ul.navTree .navTreeCurrentItem {
     background: none;
-    /*border: none;*/
+    border: none;
     margin-right: 0;
     margin-left: 0;
 }
