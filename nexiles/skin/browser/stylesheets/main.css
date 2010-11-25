@@ -78,7 +78,8 @@ dl.portlet a:link {
                 border: none;
                 font-size: 16px;
                 color: #76b41f;
-                min-width: 5em;
+                min-width: 0em;
+                margin-right: 1em;
                 padding: 0;
                 padding-left: 0.3em;
             }
@@ -185,6 +186,18 @@ a#portal-logo {
     background-color:#76b41f;
     border:0.25em solid #76b41f;
 }
+
+#content-views {
+    background-color:#76b41f;
+}
+
+#contentActionMenus {
+    background-color:#76b41f;
+}
+
+    #contentActionMenus dl.actionMenu a {
+        background-color:#76b41f;
+    }
 
 
 /* @end */
