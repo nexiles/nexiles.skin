@@ -21,9 +21,10 @@ dl.portlet a:link {
 }
 
 #visual-portal-wrapper {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 140px;
+  margin-right: 140px;
   margin-top:  2em;
+  margin-bottom: 50px;
   box-shadow: 0px 0px 3px 3px #676867;
   -moz-box-shadow: 0px 0px 3px 3px #676867;
   -webkit-box-shadow: 0px 0px 3px 3px #676867;
@@ -183,13 +184,13 @@ a#portal-logo {
 dl.portlet ul.navTreeLevel0 > .navTreeItem {
     line-height:2em;
     padding:0.25em 1em;
-    border: none;
+    /*border: none;*/
     color: #676867;
 }
 
 dl.portlet ul.navTree .navTreeCurrentItem {
     background: none;
-    border: none;
+    /*border: none;*/
     margin-right: 0;
     margin-left: 0;
 }
@@ -226,6 +227,8 @@ h1.documentFirstHeading {
     line-height:normal;
     font-family: 'MetaNormal-RomanRegular', sans-serif;
     font-size-adjust: 0.5;
+
+    margin-bottom: 36px;
 }
 /* @end */
 
