@@ -6,7 +6,7 @@ jQuery(function() {
     //Cufon.replace("h1", {FontFamily: "MetaNormal-Roman"});
 
     Cufon.set('fontFamily', 'MetaNormalRoman').replace('#portal-globalnav li a', {hover: true});
-    Cufon.set('fontFamily', 'MetaNormalRoman').replace('li.navTreeItem a');
+    Cufon.set('fontFamily', 'MetaNormalRoman').replace('li.navTreeItem a', {hover: true});
     Cufon.set('fontFamily', 'MetaNormalRoman').replace('h1');
 
     // hide personaltools

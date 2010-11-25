@@ -8,12 +8,19 @@ grün: #76b41f
 
 /* @group basics */
 
-a:link, a:visited {
-    color:#676867;
+a:link,
+a:visited,
+#content a,
+#content a:visited {
+    color: #676867;
+}
+
+#content {
+    color: #676867;
 }
 
 dl.portlet a:link {
-    color:#676867;  
+    color: #676867;
 }
 
 #content a:link, dl.portlet a:link {
@@ -229,6 +236,8 @@ h1.documentFirstHeading {
     line-height:normal;
     font-family: 'MetaNormal-RomanRegular', sans-serif;
     font-size-adjust: 0.5;
+
+    color: #676867;
 
     margin-bottom: 36px;
 }
