@@ -26,6 +26,7 @@ setup(name='nexiles.skin',
       install_requires=[
           'setuptools',
           'z3c.jbot',
+          'Products.LinguaPlone',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
