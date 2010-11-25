@@ -61,7 +61,7 @@
             class="row"
             i18n:domain="plone"
             tal:condition="not:ajax_load">
-            <div class="cell width-full position-0">
+            <div id="portal-top-wrapper" class="cell width-full position-0">
               <!-- TODO: Temporary, this one should be in the template that is inserted -->
               <div tal:replace="structure provider:plone.portaltop" />
             </div>

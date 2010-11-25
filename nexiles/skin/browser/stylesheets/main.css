@@ -33,48 +33,55 @@ dl.portlet a:link {
 
 /* @group HEADER */
 
-#portal-top {
-    z-index: 0;
+#portal-top-wrapper {
+    margin-left: -100%
 }
-    #portal-header {
-        z-index: 1;
+
+    #portal-top {
+        z-index: 0;
     }
+        #portal-header {
+            z-index: 1;
+        }
 
 
 /* @group global nav */
 
-#portal-globalnav {
-    clear: left;
-    float: left;
-    right: -25%;
-    position:relative;
-    /* top:-5em; */
-    background: transparent;
+#portal-globalnav-wrapper {
 }
 
-    #portal-globalnav ul {
-         background: transparent;
-
-    }
-
-    #portal-globalnav li {
+    #portal-globalnav {
+        /*clear: left;*/
+        /*float: left;*/
+        /*right: -25%;*/
+        /*position:relative;*/
+        /* top:-5em; */
         background: transparent;
     }
 
-        #portal-globalnav li a {
-            background: transparent;
-            border: none;
+        #portal-globalnav ul {
+             background: transparent;
+
         }
 
-            #portal-globalnav .selected a,
-            #portal-globalnav a:hover {
+        #portal-globalnav li {
+            background: transparent;
+        }
+
+            #portal-globalnav li a {
                 background: transparent;
-                color: #76b41f;
+                border: none;
             }
-            #portal-globalnav .selected a:hover {
-                background: transparent;
-                color: #76b41f;
-            }
+
+                #portal-globalnav .selected a,
+                #portal-globalnav a:hover {
+                    background: transparent;
+                    color: #76b41f;
+                }
+                #portal-globalnav .selected a:hover {
+                    background: transparent;
+                    color: #76b41f;
+                }
 
 /* @end */
 
@@ -95,20 +102,20 @@ dl.portlet a:link {
 /* @group personal tools */
 
 #portal-personaltools-wrapper {
-	   top: -30px;
+       top: -30px;
        position: absolute;
 
 }
-	#portal-personaltools {
-	    background: white;
-	    z-index: 3;
-	
-	}
-	    #portal-personaltools dd {
-	        background: white;
-	        border: thin solid #676867;
-	        z-index: 3;
-	    }
+    #portal-personaltools {
+        background: white;
+        z-index: 3;
+    
+    }
+        #portal-personaltools dd {
+            background: white;
+            border: thin solid #676867;
+            z-index: 3;
+        }
 
 
 
