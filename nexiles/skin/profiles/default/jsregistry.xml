@@ -22,7 +22,11 @@
     cacheable="False" compression="safe" cookable="False"
     enabled="True" expression=""  inline="False"/>
  <javascript
-    id="++resource++nexiles.skin.js/MetaNormalRoman_400.font.js"
+    id="++resource++nexiles.skin.js/nexiles.font.js"
+    cacheable="False" compression="safe" cookable="False"
+    enabled="True" expression=""  inline="False"/>
+ <javascript
+    id="++resource++nexiles.skin.js/cufonize.js"
     cacheable="False" compression="safe" cookable="False"
     enabled="True" expression=""  inline="False"/>
 

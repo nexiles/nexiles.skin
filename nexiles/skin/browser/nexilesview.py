@@ -26,7 +26,7 @@ class NexilesView(BrowserView):
         """
         context = aq_inner(self.context)
 
-        logger.info("getColumnsClass: column=%s" % column)
+        logger.debug("getColumnsClass: column=%s" % column)
 
         if column=='content':
             plone_view = getMultiAdapter((context, self.request), name=u'plone')
@@ -34,24 +34,24 @@ class NexilesView(BrowserView):
             sr = plone_view.have_portlets('plone.rightcolumn', view=view);
             portal_state = getMultiAdapter((context, self.request), name=u'plone_portal_state')
 
-            logger.info("sl, sr = %s, %s" % (sl, sr))
+            logger.debug("sl, sr = %s, %s" % (sl, sr))
 
             if sr:
-                logger.info( "cell width-%d position-%d" % (WITH_TOTAL - COLUMN_RIGHT_WIDTH - COLUMN_LEFT_WIDTH, COLUMN_LEFT_WIDTH))
+                logger.debug( "cell width-%d position-%d" % (WITH_TOTAL - COLUMN_RIGHT_WIDTH - COLUMN_LEFT_WIDTH, COLUMN_LEFT_WIDTH))
                 return "cell width-%d position-%d" % (WITH_TOTAL - COLUMN_RIGHT_WIDTH - COLUMN_LEFT_WIDTH, COLUMN_LEFT_WIDTH)
             else:
-                logger.info( "cell width-%d position-%d" % (WITH_TOTAL - COLUMN_LEFT_WIDTH, COLUMN_LEFT_WIDTH))
+                logger.debug( "cell width-%d position-%d" % (WITH_TOTAL - COLUMN_LEFT_WIDTH, COLUMN_LEFT_WIDTH))
                 return "cell width-%d position-%d" % (WITH_TOTAL - COLUMN_LEFT_WIDTH, COLUMN_LEFT_WIDTH)
 
         elif column=='left':
-            logger.info( "cell width-%d position-0" % COLUMN_LEFT_WIDTH)
+            logger.debug( "cell width-%d position-0" % COLUMN_LEFT_WIDTH)
             return "cell width-%d position-0" % COLUMN_LEFT_WIDTH
 
         elif column=='right':
-            logger.info( "cell width-%d position-%d" % (COLUMN_RIGHT_WIDTH, WITH_TOTAL - COLUMN_RIGHT_WIDTH))
+            logger.debug( "cell width-%d position-%d" % (COLUMN_RIGHT_WIDTH, WITH_TOTAL - COLUMN_RIGHT_WIDTH))
             return "cell width-%d position-%d" % (COLUMN_RIGHT_WIDTH, WITH_TOTAL - COLUMN_RIGHT_WIDTH)
 
         else:
-            logger.info( "cell width-full position-0")
+            logger.debug( "cell width-full position-0")
             return "cell width-full position-0"
 

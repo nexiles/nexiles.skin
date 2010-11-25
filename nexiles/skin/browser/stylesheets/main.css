@@ -48,15 +48,12 @@ dl.portlet a:link {
 /* @group global nav */
 
 #portal-globalnav-wrapper {
+    top: -60px;
 }
 
     #portal-globalnav {
-        /*clear: left;*/
-        /*float: left;*/
-        /*right: -25%;*/
-        /*position:relative;*/
-        /* top:-5em; */
         background: transparent;
+        margin 0;
     }
 
         #portal-globalnav ul {
@@ -71,16 +68,29 @@ dl.portlet a:link {
             #portal-globalnav li a {
                 background: transparent;
                 border: none;
+                font-size: 16px;
+                color: #76b41f;
             }
-
-                #portal-globalnav .selected a,
                 #portal-globalnav a:hover {
                     background: transparent;
+                    color: #676867;
+                }
+
+                #portal-globalnav li.selected {
+                    position: relative;
+                    top: 30px;
+                    font-size: 24px;
+                }
+
+                #portal-globalnav .selected a {
+                    background: transparent;
                     color: #76b41f;
+                    font-size: 24px;
                 }
                 #portal-globalnav .selected a:hover {
                     background: transparent;
                     color: #76b41f;
+                    font-size: 24px;
                 }
 
 /* @end */
@@ -109,7 +119,6 @@ dl.portlet a:link {
     #portal-personaltools {
         background: white;
         z-index: 3;
-    
     }
         #portal-personaltools dd {
             background: white;
@@ -155,5 +164,69 @@ a#portal-logo {
     
 /* @end */
 
+/* @group Content Area */
+
+#portal-column-content {
+    top: -75px;
+}
+
+#edit-bar {
+    background-color:#76b41f;
+    border:0.25em solid #76b41f;
+}
+
+
+/* @end */
+
+/* @group NavTree */
+
+dl.portlet ul.navTreeLevel0 > .navTreeItem {
+    line-height:2em;
+    padding:0.25em 1em;
+    border: none;
+    color: #676867;
+}
+
+dl.portlet ul.navTree .navTreeCurrentItem {
+    background: none;
+    border: none;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+ul.navTree li a {
+    text-align: right;
+    font-size: 16px;
+}
+
+ul.navTree li a.navTreeCurrentItem {
+    color:#76b41f;
+}
+
+dl.portlet a:visited,
+dl.portlet a {
+    color:#676867;
+}
+/* @end */
+
+
+/* @group FontFace */
+@font-face {
+    font-family: 'MetaNormal-RomanRegular';
+    src: url('metanormalroman-webfont.eot');
+    src: local('☺'), url('metanormalroman-webfont.woff') format('woff'), url('metanormalroman-webfont.ttf') format('truetype'), url('metanormalroman-webfont.svg#webfontUnjPknVd') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1.documentFirstHeading {
+    font-weight: normal;
+    font-style: normal;
+    line-height:normal;
+    font-family: 'MetaNormal-RomanRegular', sans-serif;
+    font-size-adjust: 0.5;
+}
+/* @end */
 
 
