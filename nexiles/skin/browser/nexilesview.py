@@ -8,7 +8,7 @@ from nexiles.skin.browser.interfaces import INexilesView
 
 import logging
 
-COLUMN_LEFT_WIDTH = 3
+COLUMN_LEFT_WIDTH = 4
 COLUMN_RIGHT_WIDTH = 3
 WITH_TOTAL = 16
 

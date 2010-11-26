@@ -3,7 +3,7 @@
      i18n:domain="plone">
     <h5 class="hiddenStructure" i18n:translate="heading_sections">Sections</h5>
 
-    <div id="portal-globalnav-wrapper" class="cell width-13 position-3">
+    <div id="portal-globalnav-wrapper" class="cell width-12 position-4">
       <ul id="portal-globalnav"
         tal:define="selected_tab python:view.selected_portal_tab">
         <tal:tabs tal:repeat="tab portal_tabs">
