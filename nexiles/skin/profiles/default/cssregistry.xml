@@ -33,6 +33,10 @@
     media="screen" rel="stylesheet" rendering="import"
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression="" conditionalcomment="IE" applyPrefix="True"/>
-
+ <stylesheet title=""
+    id="++resource++nexiles.skin.stylesheets/main-ie7.css"
+    media="screen" rel="stylesheet" rendering="import"
+    cacheable="True" compression="safe" cookable="True"
+    enabled="1" expression="" conditionalcomment="lt IE 8" applyPrefix="True"/>
 
 </object>

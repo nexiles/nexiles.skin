@@ -1,5 +1,5 @@
-
 /* IEs don't support box-shadow -- use a thin border instead */
 #visual-portal-wrapper {
   border: thin solid #676867;
 }
+

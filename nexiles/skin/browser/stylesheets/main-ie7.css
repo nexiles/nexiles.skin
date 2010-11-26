@@ -1,0 +1,10 @@
+/* IE7 dooes like a explicit height, and 'thin' isn't thin, exactly */
+#visual-portal-wrapper {
+  height: 100%;
+  border: 1px solid #676867;
+}
+
+/* the personal tools are not set correctly on IE7 */
+#portal-personaltools-wrapper {
+    left: -80%;
+};
