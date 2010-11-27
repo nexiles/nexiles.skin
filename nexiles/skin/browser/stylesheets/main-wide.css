@@ -1,0 +1,11 @@
+#debug {
+    background: green;
+    border: 3px solid green;
+}
+
+#visual-portal-wrapper {
+}
+
+#portal-column-two {
+    display: none;
+}

@@ -23,19 +23,38 @@
       ResourceRegistries/tools/CSSRegistry.py for the latest list of all
       available keys and default values.
       -->
- <stylesheet title=""
+ <stylesheet title="default"
     id="++resource++nexiles.skin.stylesheets/main.css"
-    media="screen" rel="stylesheet" rendering="import"
+    media="screen" rel="stylesheet" rendering="link"
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression="" applyPrefix="True"/>
- <stylesheet title=""
+
+ <stylesheet title="nexiles-css-thin"
+    id="++resource++nexiles.skin.stylesheets/main-thin.css"
+    media="screen" rel="alternate stylesheet" rendering="link"
+    cacheable="True" compression="safe" cookable="True"
+    enabled="1" expression="" applyPrefix="True"/>
+
+ <stylesheet title="nexiles-css-wide"
+    id="++resource++nexiles.skin.stylesheets/main-wide.css"
+    media="screen" rel="alternate stylesheet" rendering="link"
+    cacheable="True" compression="safe" cookable="True"
+    enabled="1" expression="" applyPrefix="True"/>
+
+ <stylesheet title="nexiles-css-wider"
+    id="++resource++nexiles.skin.stylesheets/main-wider.css"
+    media="screen" rel="alternate stylesheet" rendering="link"
+    cacheable="True" compression="safe" cookable="True"
+    enabled="1" expression="" applyPrefix="True"/>
+
+ <stylesheet title="default"
     id="++resource++nexiles.skin.stylesheets/main-ie.css"
-    media="screen" rel="stylesheet" rendering="import"
+    media="screen" rel="stylesheet" rendering="link"
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression="" conditionalcomment="IE" applyPrefix="True"/>
- <stylesheet title=""
+ <stylesheet title="default"
     id="++resource++nexiles.skin.stylesheets/main-ie7.css"
-    media="screen" rel="stylesheet" rendering="import"
+    media="screen" rel="stylesheet" rendering="link"
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression="" conditionalcomment="lt IE 8" applyPrefix="True"/>
 

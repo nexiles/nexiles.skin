@@ -30,10 +30,13 @@ dl.portlet a:link {
 #visual-portal-wrapper {
   margin-top:  4em;
   margin-bottom: 50px;
-  width: 1024px;
-  position: relative;
-  left: 50%;
-  margin-left: -512px;
+  /*width: 1024px;*/
+  /*position: relative;*/
+  /*left: 50%;*/
+  /*margin-left: -512px;*/
+  margin-left: 2em;
+  margin-right: 2em;
+  min-width: 560px;
   box-shadow: 0px 0px 3px 3px #676867;
   -moz-box-shadow: 0px 0px 3px 3px #676867;
   -webkit-box-shadow: 0px 0px 3px 3px #676867;
@@ -58,7 +61,7 @@ dl.portlet a:link {
 /* @group global nav */
 
 #portal-globalnav-wrapper {
-    top: -60px;
+    top: 55px;
 }
 
     #portal-globalnav {
@@ -161,9 +164,11 @@ dl.portlet a:link {
 
 /* @group logo und banderole */
 
-a#portal-logo {
-    margin-top: 0;
+#portal-logo {
+    margin-top: 67px;
+    margin-left: 12px;
 }
+
 #banderole {
     position: relative;
     float: right;
@@ -239,13 +244,13 @@ dl.portlet a {
 
 
 /* @group FontFace */
-@font-face {
+/*@font-face {
     font-family: 'MetaNormal-RomanRegular';
     src: url('metanormalroman-webfont.eot');
     src: local('☺'), url('metanormalroman-webfont.woff') format('woff'), url('metanormalroman-webfont.ttf') format('truetype'), url('metanormalroman-webfont.svg#webfontUnjPknVd') format('svg');
     font-weight: normal;
     font-style: normal;
-}
+}*/
 
 
 h1.documentFirstHeading {

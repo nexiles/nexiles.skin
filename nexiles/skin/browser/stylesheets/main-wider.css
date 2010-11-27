@@ -1,0 +1,11 @@
+#debug {
+    background: blue;
+    border: 5px solid blue;
+}
+
+#visual-portal-wrapper {
+}
+
+#portal-column-two {
+    display: block;
+}

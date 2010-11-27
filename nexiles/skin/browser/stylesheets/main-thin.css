@@ -1,0 +1,20 @@
+#debug {
+    background: yellow;
+    border: 1px solid black;
+}
+
+#visual-portal-wrapper {
+}
+
+#portal-column-two {
+    display: none;
+}
+
+#portal-column-one {
+    display: none;
+}
+
+#portal-logo {
+    display: none;
+}
+
