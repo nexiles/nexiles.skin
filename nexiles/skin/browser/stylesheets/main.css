@@ -166,7 +166,7 @@ dl.portlet a:link {
 
 #portal-logo {
     margin-top: 67px;
-    margin-left: 12px;
+    margin-left: -100%;
 }
 
 #banderole {
