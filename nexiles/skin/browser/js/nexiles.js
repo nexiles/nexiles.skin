@@ -42,6 +42,7 @@ function changeLayout(identifier) {
 
 
     // do some JS work to rebuild deco grid
+    // TODO: only show column two if it's actually there ...
     if (identifier == "wide") {
         $("#portal-logo").show();
         $("#portal-column-one").show();
@@ -106,6 +107,7 @@ $(document).ready(function() {
     Cufon.set('fontFamily', 'MetaNormalRoman').replace('#portal-globalnav li a', {hover: true});
     Cufon.set('fontFamily', 'MetaNormalRoman').replace('li.navTreeItem a', {hover: true});
     Cufon.set('fontFamily', 'MetaNormalRoman').replace('h1');
+    Cufon.set('fontFamily', 'MetaNormalRoman').replace('dt.portletHeader a');
 
     $(window).trigger("resize");
 });

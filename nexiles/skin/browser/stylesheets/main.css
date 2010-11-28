@@ -207,6 +207,16 @@ dl.portlet a:link {
     }
 
 
+  dl.portlet dt.portletHeader {
+    font-size: 150%;
+    padding-left: 0;
+    background: transparent;
+  }
+
+  dl.portlet dd.portletItem {
+    padding-left: 0;
+  }
+
 /* @end */
 
 /* @group NavTree */
