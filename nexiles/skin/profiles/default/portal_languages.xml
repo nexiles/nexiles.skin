@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <object>
  <default_language value="en"/>
- <use_path_negotiation value="False"/>
+ <use_path_negotiation value="True"/>
  <use_cookie_negotiation value="True"/>
  <use_request_negotiation value="True"/>
- <use_cctld_negotiation value="False"/>
+ <use_cctld_negotiation value="True"/>
  <use_content_negotiation value="True"/>
  <use_combined_language_codes value="False"/>
  <display_flags value="True"/>
