@@ -37,8 +37,12 @@ function changeLayout(identifier) {
 
     //});
 
-    var portalOneWidth = $("#portal-column-one").width();
-    $("#portal-logo").css({"margin-left": portalOneWidth - 142});
+    var logo_margin = $("#portal-column-one").width() - 142;
+    if (logo_margin>14) {
+        $("#portal-logo").css({"margin-left": logo_margin});
+    } else {
+        $("#portal-logo").css({"margin-left": 14});
+    }
 
 
     // do some JS work to rebuild deco grid
