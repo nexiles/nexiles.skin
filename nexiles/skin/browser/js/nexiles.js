@@ -1,7 +1,6 @@
 jQuery.fn.setDeco = function(width, position) {
     var classes = this.attr("class").split(" ");
-
-    //console.log("setDeco: "+$(this).attr("id")+" "+x+" "+width+" "+position);
+    //console.log("setDeco: " + $(this).attr("id") + " " + width + " " + position);
 
     for (var i=0; i<classes.length; i++) {
         if (classes[i].indexOf("width-") == 0) {
@@ -19,30 +18,15 @@ jQuery.fn.setDeco = function(width, position) {
     this.addClass("position-"+position);
 };
 
-function changeLayout(identifier) {
+var changeLayout = function(identifier) {
     //console.log("changeLayout: " + identifier);
 
-    // switch style sheets
-    //$("head > link").each(function(index) {
-        //var node = $(this);
-        //var title = "nexiles-css-" + identifier;
-
-        //if (node.attr("title") == title) {
-            //console.log("enable: " + node.attr("title"));
-            //this.disabled = false;
-        //} else if (node.attr("title").indexOf("nexiles") == 0 ) {
-            //console.log("disable: " + node.attr("title"));
-            //this.disabled = true;
-        //}
-
-    //});
-
     var logo_margin = $("#portal-column-one").width() - 142;
-    if (logo_margin>14) {
-        $("#portal-logo").css({"margin-left": logo_margin});
-    } else {
-        $("#portal-logo").css({"margin-left": 14});
+    //console.log("changeLayout.logo_margin: " + logo_margin);
+    if (logo_margin<14) {
+        logo_margin = $("#visual-portal-wrapper").width() - $("#portal-globalnav-wrapper").width() - 200;
     }
+    $("#portal-logo").css({"margin-left": logo_margin});
 
 
     // do some JS work to rebuild deco grid
@@ -85,8 +69,6 @@ var updateLayout = function(width) {
         changeLayout("wider");
     }
 };
-
-
 
 $(document).load(function() {
     //console.log("document load");
