@@ -183,6 +183,14 @@ dl.portlet a:link {
     
 /* @end */
 
+/* @group portlets */
+
+dl.portlet dd.portletItem {
+    padding-bottom: 0;
+}
+
+/* @end */
+
 /* @group Content Area */
 
 #portal-column-content {
