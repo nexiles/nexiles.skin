@@ -27,6 +27,7 @@ setup(name='nexiles.skin',
           'setuptools',
           'z3c.jbot',
           'Products.LinguaPlone',
+          'collective.uploadify',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
